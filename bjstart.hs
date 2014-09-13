@@ -16,7 +16,7 @@ empty :: Hand
 empty = Empty
 
 value :: Hand -> Integer
-value (Card rank suit) = sum[rank + (Card rank) empty]
+value (Card rank) = sum[rank + (Card rank) empty]
 
 valueRank :: Rank -> Integer
 valueRank (Numeric n) = n
