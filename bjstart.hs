@@ -15,8 +15,8 @@ import Wrapper
 empty :: Hand
 empty = Empty
 
---value :: Hand -> Integer
---value (Hand Card) = valueCard Card empty
+value :: Hand -> Integer
+value (Card rank suit) = rank + (Card rank) empty
 
 valueRank :: Rank -> Integer
 valueRank (Numeric n) = n
