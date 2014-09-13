@@ -36,6 +36,8 @@ numberOfAces (Add _ rest) = numberOfAces rest
 
 
 --gameOver :: Hand -> Bool
+-- value Hand | Hand > 21 = True
+--            | Hand < 21 = False något sådant kanske? Eller är jag helt ute och cyklar?
 --winner :: Hand -> Hand -> Player
 --data Player = Guest | Bank
 --              deriving (Show, Eq)
